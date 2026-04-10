@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Para você 💍</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;600&display=swap"
+        rel="stylesheet" />
+    
+        <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div id="ldr">
+        <div class="ldr-r"></div>
+        <div class="ldr-t">Preparando algo especial...</div>
+    </div>
+    <div class="vig"></div>
+    <canvas id="bgc"></canvas>
+    <canvas id="ptc"></canvas>
+    <div id="prc"></div>
+    <div id="page">
+        <!-- INTRO -->
+        <section id="si">
+            <div class="i-eyebrow">Uma mensagem do coração</div>
+            <h1 class="i-main">Para<em>você</em></h1>
+            <p class="i-sub">role suavemente para baixo</p>
+        </section>
+        <!-- GARDEN -->
+        <section id="sg">
+            <div id="gs">
+                <canvas id="gc"></canvas>
+                <div class="govl"></div>
+                <div class="gtxt" id="gtxt">
+                    <h2>Crescendo por você...</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ring box -->
+        <div id="ring-box-overlay">
+            <div id="ring-box-scene">
+                <div class="ring-box-3d">
+                    <div class="box-outer" id="box-outer">
+                        <div class="box-ribbon"></div>
+                        <div class="box-lid" id="box-lid">
+                            <div class="lid-inner"></div>
+                        </div>
+                        <div class="box-body">
+                            <div class="velvet-interior">
+                                <div class="ring-slot" id="slot-men">
+                                    <svg class="ring-svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <defs>
+                                            <linearGradient id="sgM" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#e8e8e8" />
+                                                <stop offset="30%" stop-color="#ffffff" />
+                                                <stop offset="60%" stop-color="#b0b0b0" />
+                                                <stop offset="100%" stop-color="#d8d8d8" />
+                                            </linearGradient>
+                                            <linearGradient id="sgMi" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#888" />
+                                                <stop offset="50%" stop-color="#ccc" />
+                                                <stop offset="100%" stop-color="#999" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Men's band - wider, plain silver -->
+                                        <circle cx="30" cy="30" r="22" fill="none" stroke="url(#sgM)"
+                                            stroke-width="9" />
+                                        <circle cx="30" cy="30" r="22" fill="none" stroke="url(#sgMi)" stroke-width="9"
+                                            stroke-dasharray="3 4" opacity=".35" />
+                                        <!-- engraved line detail -->
+                                        <circle cx="30" cy="30" r="18.5" fill="none" stroke="#aaa" stroke-width="0.7"
+                                            opacity=".5" />
+                                        <circle cx="30" cy="30" r="25.5" fill="none" stroke="#ddd" stroke-width="0.7"
+                                            opacity=".3" />
+                                        <!-- shine arc -->
+                                        <path d="M 12 22 Q 15 10 30 9 Q 44 10 47 22" fill="none"
+                                            stroke="rgba(255,255,255,.55)" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="ring-label">Eu</div>
+                                </div>
+                                <div class="cushion-divider"></div>
+                                <div class="ring-slot" id="slot-women">
+                                    <svg class="ring-svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <defs>
+                                            <linearGradient id="sgW" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#efefef" />
+                                                <stop offset="30%" stop-color="#ffffff" />
+                                                <stop offset="60%" stop-color="#b8b8b8" />
+                                                <stop offset="100%" stop-color="#ddd" />
+                                            </linearGradient>
+                                            <linearGradient id="sgWi" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#aaa" />
+                                                <stop offset="50%" stop-color="#eee" />
+                                                <stop offset="100%" stop-color="#bbb" />
+                                            </linearGradient>
+                                            <radialGradient id="diaG" cx="40%" cy="35%" r="60%">
+                                                <stop offset="0%" stop-color="#ffffff" />
+                                                <stop offset="25%" stop-color="#e8f4ff" />
+                                                <stop offset="60%" stop-color="#b8d8ff" />
+                                                <stop offset="100%" stop-color="#7090c0" />
+                                            </radialGradient>
+                                            <linearGradient id="settingG" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#e0e0e0" />
+                                                <stop offset="50%" stop-color="#ffffff" />
+                                                <stop offset="100%" stop-color="#b0b0b0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Women's band - thinner -->
+                                        <circle cx="30" cy="34" r="18" fill="none" stroke="url(#sgW)"
+                                            stroke-width="6" />
+                                        <circle cx="30" cy="34" r="18" fill="none" stroke="url(#sgWi)" stroke-width="6"
+                                            stroke-dasharray="2 3" opacity=".3" />
+                                        <!-- shine -->
+                                        <path d="M 14 28 Q 17 18 30 17 Q 43 18 46 28" fill="none"
+                                            stroke="rgba(255,255,255,.6)" stroke-width="1.5" stroke-linecap="round" />
+                                        <!-- setting prongs -->
+                                        <ellipse cx="30" cy="15" rx="7" ry="4" fill="url(#settingG)" stroke="#b0b0b0"
+                                            stroke-width="0.8" />
+                                        <rect x="27.5" y="13" width="5" height="6" rx="1" fill="url(#settingG)"
+                                            stroke="#b0b0b0" stroke-width="0.6" />
+                                        <!-- prong lines -->
+                                        <line x1="24" y1="13" x2="24" y2="10" stroke="#c8c8c8" stroke-width="1.2"
+                                            stroke-linecap="round" />
+                                        <line x1="36" y1="13" x2="36" y2="10" stroke="#c8c8c8" stroke-width="1.2"
+                                            stroke-linecap="round" />
+                                        <line x1="30" y1="11.5" x2="30" y2="8" stroke="#c8c8c8" stroke-width="1.2"
+                                            stroke-linecap="round" />
+                                        <!-- solitaire diamond -->
+                                        <polygon points="30,8 24,13 30,17 36,13" fill="url(#diaG)"
+                                            stroke="rgba(180,200,255,.5)" stroke-width="0.5" />
+                                        <polygon points="30,8 27,11 30,9.5" fill="rgba(255,255,255,.7)" stroke="none" />
+                                        <polygon points="30,17 24,13 28,15" fill="rgba(80,100,160,.4)" stroke="none" />
+                                        <polygon points="30,17 36,13 32,15" fill="rgba(60,80,140,.3)" stroke="none" />
+                                        <!-- diamond sparkle -->
+                                        <line x1="30" y1="6" x2="30" y2="4" stroke="rgba(255,255,255,.9)"
+                                            stroke-width="0.8" stroke-linecap="round" />
+                                        <line x1="32" y1="7" x2="33.5" y2="5.5" stroke="rgba(200,220,255,.7)"
+                                            stroke-width="0.8" stroke-linecap="round" />
+                                        <line x1="28" y1="7" x2="26.5" y2="5.5" stroke="rgba(200,220,255,.7)"
+                                            stroke-width="0.8" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="ring-label">Você</div>
+                                </div>
+                            </div>
+                            <div class="box-clasp"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="proposal-text">
+                    <p>Uma pergunta, para você...</p>
+                    <h1>Você aceita namorar<br>comigo? <span class="heart">♥</span></h1>
+                    <div class="proposal-btns" id="proposal-btns">
+                        <button class="btn-yes" onclick="sayYes()">Sim</button>
+                        <button class="btn-no" id="btn-no" onmouseover="runAway(this)" onclick="sayYes()">Não</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="response-overlay">
+        <h2 id="response-message"></h2>
+        <p id="response-sub"></p>
+    </div>
+    
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
